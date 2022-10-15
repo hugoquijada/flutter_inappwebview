@@ -145,7 +145,7 @@ public class FlutterWebView implements PlatformWebView {
       if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q && WebViewFeature.isFeatureSupported(WebViewFeature.WEB_VIEW_RENDERER_CLIENT_BASIC_USAGE)) {
         WebViewCompat.setWebViewRenderProcessClient(webView, null);
       }
-      webView.setWebChromeClient(new WebChromeClient());
+      // webView.setWebChromeClient(new WebChromeClient());
       webView.setWebViewClient(new WebViewClient() {
         @Override
         public void onPageFinished(WebView view, String url) {

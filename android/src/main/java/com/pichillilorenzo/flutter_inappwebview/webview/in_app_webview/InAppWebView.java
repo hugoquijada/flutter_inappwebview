@@ -206,7 +206,7 @@ final public class InAppWebView extends InputAwareWebView implements InAppWebVie
     addJavascriptInterface(javaScriptBridgeInterface, JavaScriptBridgeJS.JAVASCRIPT_BRIDGE_NAME);
 
     inAppWebViewChromeClient = new InAppWebViewChromeClient(plugin, this, inAppBrowserDelegate);
-    setWebChromeClient(inAppWebViewChromeClient);
+    // setWebChromeClient(inAppWebViewChromeClient);
 
     inAppWebViewClient = new InAppWebViewClient(inAppBrowserDelegate);
     setWebViewClient(inAppWebViewClient);
